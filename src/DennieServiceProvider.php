@@ -7,7 +7,7 @@ use Illuminate\Support\ServiceProvider;
 class DennieServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap services.
+     * Bootstrap services but not Twitter boostrap
      *
      * @return void
      */
