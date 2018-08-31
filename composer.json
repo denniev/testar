@@ -1,0 +1,41 @@
+{
+    "name": "brainworks/dennie",
+    "description": "A description for dennie.",
+    "type": "package",
+    "license": "MIT",
+    "keywords": [
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Dennie Vilumsons",
+            "email": "dennie@brainworks.se"
+        }
+    ],
+    "require": {
+        "illuminate/support": "5.6.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brainworks\\Dennie\\": "./src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brainworks\\Dennie\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brainworks\\Dennie\\DennieServiceProvider"
+            ]
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.6"
+    }
+}
